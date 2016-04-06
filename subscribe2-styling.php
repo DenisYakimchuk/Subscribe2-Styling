@@ -197,9 +197,7 @@ class Subscribe2_Styling {
 	}
 	
 	function add_plugin_page() {
-		
-		global $s2_menu_slug;
-		add_submenu_page( $s2_menu_slug, __('Subscribe2 Form Styling', S2S_TEXTDOMAIN), __('Form Styling', S2S_TEXTDOMAIN), 'manage_options', 's2_form_styling', array($this, 's2_form_styling_settings'));
+		add_submenu_page( 's2', __('Subscribe2 Form Styling', S2S_TEXTDOMAIN), __('Form Styling', S2S_TEXTDOMAIN), 'manage_options', 's2_form_styling', array($this, 's2_form_styling_settings'));
 	}
 	
 	function s2_form_styling_settings() {
